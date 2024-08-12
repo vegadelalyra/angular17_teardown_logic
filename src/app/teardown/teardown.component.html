@@ -1,0 +1,39 @@
+<div>
+    <h1>Teardown Strategies Example</h1>
+  
+    <!-- Interval Data -->
+    <div *ngIf="intervalData$ | async as data">
+      <p>{{ data }}</p>
+      <button (click)="destroyIntervalData()">Destroy Interval Data</button>
+      <button (click)="recreateIntervalData()">Recreate Interval Data</button>
+    </div>
+  
+    <!-- Async Data -->
+    <div *ngIf="asyncData$ | async as data">
+      <p>{{ data }}</p>
+      <button (click)="destroyAsyncData()">Destroy Async Data</button>
+      <button (click)="recreateAsyncData()">Recreate Async Data</button>
+    </div>
+  
+    <!-- Master Data -->
+    <div *ngIf="masterData$ | async as data">
+      <p>{{ data }}</p>
+      <button (click)="destroyMasterData()">Destroy Master Data</button>
+      <button (click)="recreateMasterData()">Recreate Master Data</button>
+    </div>
+  
+    <!-- Async Pipe Data -->
+    <div *ngIf="asyncDataFromPipe$ | async as data">
+      <p>{{ data }}</p>
+      <button (click)="destroyAsyncPipeData()">Destroy Async Pipe Data</button>
+      <button (click)="recreateAsyncPipeData()">Recreate Async Pipe Data</button>
+    </div>
+  
+    <!-- Signal Data -->
+    <div>
+      <p>Signal Data: {{ mySignal() }}</p>
+      <button (click)="destroySignalData()">Destroy Signal Data</button>
+      <button (click)="recreateSignalData()">Recreate Signal Data</button>
+    </div>
+  </div>
+  
