@@ -1,5 +1,8 @@
 # Angular17TeardownLogic
 
+![imagen](https://github.com/user-attachments/assets/9ad033a0-03ec-484a-a233-b2e3d8dcd4d8)
+
+  
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
 
 ## Development server
